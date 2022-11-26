@@ -1,5 +1,4 @@
 # Filament Advanced Page Builder Development Environment
-***
 This repository contains the development environment for the Filament Advanced Page Builder. 
 
 
