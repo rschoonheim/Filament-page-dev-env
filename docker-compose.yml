@@ -2,8 +2,6 @@ version: "3.9"
 volumes:
   filament_page_mysql_data:
 services:
-
-
   mysql_database:
     image: mysql:5.7
     container_name: mysql_database
