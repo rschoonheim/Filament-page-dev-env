@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if (app()->environment('production')) {
+            abort(503, 'This application is not intended for production use.');
+        }
     }
 }
