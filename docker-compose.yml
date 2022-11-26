@@ -1,1 +1,19 @@
 version: "3.9"
+volumes:
+  filament_page_mysql_data:
+services:
+
+
+  mysql_database:
+    image: mysql:5.7
+    container_name: mysql_database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: filament_page
+      MYSQL_USER: filament_page
+      MYSQL_PASSWORD: filament_page
+    volumes:
+      - filament_page_mysql_data:/var/lib/mysql
+    ports:
+      - 3306:3306
