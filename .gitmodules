@@ -1,0 +1,3 @@
+[submodule "filament-page"]
+	path = filament-page
+	url = git@github.com:rschoonheim/filament-page.git
