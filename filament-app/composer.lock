@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88291e0ad76a198687f14f7c4f18a07d",
+    "content-hash": "e93be733b09034c60b55c140c29e04df",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -3649,6 +3649,50 @@
             "time": "2022-11-05T23:03:38+00:00"
         },
         {
+            "name": "rschoonheim/filament-page",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "../filament-page",
+                "reference": "09417b31a015c1bbd188e59e96fec9086f9e8e7a"
+            },
+            "require": {
+                "symfony/yaml": "^6.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.14"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rschoonheim\\FilamentPage\\Laravel\\Providers\\FilamentPageBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rschoonheim\\FilamentPage\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Rschoonheim\\FilamentPage\\Tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Romano Schoonheim",
+                    "email": "romano@romanoschoonheim.nl"
+                }
+            ],
+            "description": "Page builder for FilamentPHP",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "ryangjchandler/blade-capture-directive",
             "version": "v0.2.2",
             "source": {
@@ -6084,6 +6128,80 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/var-dumper/tree/v6.0.14"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-10-07T08:02:12+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v6.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "e65020d137ad54beb85a67ffe6435e980f35ccf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e65020d137ad54beb85a67ffe6435e980f35ccf3",
+                "reference": "e65020d137ad54beb85a67ffe6435e980f35ccf3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "symfony/console": "<5.4"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4|^6.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Loads and dumps YAML files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v6.0.14"
             },
             "funding": [
                 {
@@ -8869,7 +8987,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "rschoonheim/filament-page": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
